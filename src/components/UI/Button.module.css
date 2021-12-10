@@ -2,11 +2,17 @@
   font-size: var(--font-size-body);
   font-weight: 700;
   border-radius: var(--border-radius-xs);
-  padding: 1.6rem 4rem;
+  padding: 1.6rem 1rem;
   text-transform: capitalize;
+  width: 14rem;
 }
 
 .buttonPrimary {
   color: var(--color-white);
   background-color: var(--color-violet);
+}
+
+.buttonSecondary {
+  color: var(--color-violet);
+  background-color: #eeeffc;
 }

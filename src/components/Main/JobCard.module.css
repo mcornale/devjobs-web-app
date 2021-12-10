@@ -1,0 +1,27 @@
+.jobCard {
+  padding: 1rem 3.2rem 3.2rem;
+  position: relative;
+}
+
+.jobCard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 3.5rem);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-s);
+}
+
+.jobCard > * {
+  position: relative;
+}
+
+.jobCardPosition {
+  padding: 1.2rem 0;
+}
+
+.jobCardLocation {
+  padding-top: 4rem;
+}

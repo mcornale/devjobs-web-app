@@ -1,0 +1,8 @@
+.jobBottomBanner {
+  box-sizing: content-box;
+  width: min(80rem, 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  margin: 8rem auto 0;
+}

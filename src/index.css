@@ -41,7 +41,36 @@ html {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-dark-grey);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-very-dark-blue);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  color: var(--color-violet);
 }
 
 button,
@@ -53,4 +82,8 @@ input {
 
 button {
   cursor: pointer;
+}
+
+li {
+  list-style: none;
 }

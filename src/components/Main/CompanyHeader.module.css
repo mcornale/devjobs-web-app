@@ -1,0 +1,19 @@
+.companyHeader {
+  width: min(80rem, 100%);
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-s);
+  overflow: hidden;
+}
+
+.companyHeaderInfos {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+.companyHeaderInfos h2 {
+  margin-bottom: 0.8rem;
+}

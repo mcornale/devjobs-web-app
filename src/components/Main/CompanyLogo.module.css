@@ -1,8 +1,20 @@
 .companyLogo {
+  display: grid;
+  place-items: center;
+}
+
+.companyLogoSmall {
   width: 5rem;
   height: 5rem;
   border-radius: var(--border-radius-l);
-  display: grid;
-  place-items: center;
   margin-bottom: 2.2rem;
+}
+
+.companyLogoBig {
+  width: 14rem;
+  height: 14rem;
+}
+
+.companyLogoBig img {
+  width: 58%;
 }

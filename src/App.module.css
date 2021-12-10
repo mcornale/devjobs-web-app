@@ -1,6 +1,7 @@
 .app {
   min-height: 100vh;
   background-color: var(--background-color);
+  overflow: auto;
 }
 
 .app[data-theme='light'] {
@@ -22,8 +23,14 @@
 
 .main {
   position: relative;
-  padding: 0 10% 8rem;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color-white);
 }
