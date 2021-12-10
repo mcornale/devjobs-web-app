@@ -1,0 +1,10 @@
+.searchBar {
+  width: 100%;
+  min-height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-s);
+  padding-right: 1.6rem;
+}

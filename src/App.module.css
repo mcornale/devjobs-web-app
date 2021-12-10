@@ -19,3 +19,8 @@
   height: 12.2rem;
   padding: 0 10%;
 }
+
+.main {
+  position: relative;
+  padding: 0 10%;
+}

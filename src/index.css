@@ -19,6 +19,7 @@
   --line-height-h4: 1.8rem;
   --font-size-body: 1.6rem;
   --line-height-body: 2.6rem;
+  --border-radius-xxs: 0.3rem;
   --border-radius-xs: 0.5rem;
   --border-radius-s: 0.6rem;
   --border-radius-m: 1.2rem;
@@ -43,9 +44,13 @@ body {
   font-size: 1.6rem;
 }
 
-button {
-  cursor: pointer;
+button,
+input {
   border: none;
   outline: none;
   font-family: inherit;
+}
+
+button {
+  cursor: pointer;
 }

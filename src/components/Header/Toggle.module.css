@@ -10,6 +10,7 @@
   height: 2.4rem;
   border-radius: var(--border-radius-m);
   position: relative;
+  background-color: var(--color-white);
 }
 
 .toggleButton::before {

@@ -1,0 +1,36 @@
+.inputLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.8rem 3.2rem;
+}
+
+.inputLabel[for='filterByInfos'] {
+  flex-grow: 3;
+}
+
+.inputLabel[for='filterByLocation'] {
+  flex-grow: 1;
+}
+
+.inputLabel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.1rem;
+  height: 100%;
+  background-color: var(--color-dark-grey);
+  opacity: 0.2;
+}
+
+.inputField {
+  flex-grow: 1;
+  font-size: var(--font-size-body);
+  color: var(--color-very-dark-blue);
+}
+
+.inputField::placeholder {
+  color: #8c8f96;
+}
