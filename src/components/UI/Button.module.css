@@ -5,6 +5,7 @@
   padding: 1.6rem 1rem;
   text-transform: capitalize;
   width: 14rem;
+  transition: 0.2s linear;
 }
 
 .buttonPrimary {
@@ -12,7 +13,15 @@
   background-color: var(--color-violet);
 }
 
+.buttonPrimary:hover {
+  background-color: var(--color-light-violet);
+}
+
 .buttonSecondary {
   color: var(--color-violet);
   background-color: #eeeffc;
+}
+
+.buttonSecondary:hover {
+  background-color: #c5c9f4;
 }

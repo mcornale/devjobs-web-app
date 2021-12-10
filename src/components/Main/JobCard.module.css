@@ -20,6 +20,11 @@
 
 .jobCardPosition {
   padding: 1.2rem 0;
+  transition: 0.2s linear;
+}
+
+.jobCardPosition:hover {
+  color: var(--color-dark-grey);
 }
 
 .jobCardLocation {

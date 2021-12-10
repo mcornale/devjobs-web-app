@@ -24,6 +24,16 @@
   background-color: #e7e8e9;
   border-radius: var(--border-radius-xxs);
   position: relative;
+  transition: 0.2s linear;
+}
+
+.checkboxCustomInput:hover {
+  background-color: #d5d8f7;
+}
+
+.checkboxCustomInput:active,
+.checkboxLabel:active .checkboxCustomInput {
+  transform: scale(0.8);
 }
 
 .checkboxDefaultInput:checked ~ .checkboxCustomInput {
