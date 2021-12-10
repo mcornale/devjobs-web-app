@@ -1,21 +1,20 @@
 import Button from '../UI/Button';
 import CompanyLogo from './CompanyLogo';
-import jobsData from '../../assets/data.json';
 
 import styles from './CompanyHeader.module.css';
 
-const CompanyHeader = () => {
+const CompanyHeader = (props) => {
   return (
     <section className={styles.companyHeader}>
       <CompanyLogo
-        logo={jobsData[0].logo}
-        logoBackground={jobsData[0].logoBackground}
+        logo={props.logo}
+        logoBackground={props.logoBackground}
         big
       />
       <div className={styles.companyHeaderInfos}>
         <div>
-          <h2>Scott</h2>
-          <p>scott.com</p>
+          <h2>{props.company}</h2>
+          <p>{props.website}</p>
         </div>
         <Button secondary>Company Site</Button>
       </div>

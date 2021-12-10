@@ -8,8 +8,8 @@ const JobsList = () => {
   return (
     <>
       <section className={styles.jobsGrid}>
-        {jobsData.map((jobData, index) => (
-          <Job key={index} {...jobData} />
+        {jobsData.map((jobData) => (
+          <Job key={jobData.id} {...jobData} />
         ))}
       </section>
       <Button primary>Load more</Button>

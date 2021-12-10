@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CompanyLogo from './CompanyLogo';
 
 import styles from './JobCard.module.css';
@@ -12,7 +13,9 @@ const Job = (props) => {
         small
       />
       <JobInfos postedAt={props.postedAt} contract={props.contract} />
-      <h3 className={styles.jobCardPosition}>{props.position}</h3>
+      <Link to={`/${props.id}`}>
+        <h3 className={styles.jobCardPosition}>{props.position}</h3>
+      </Link>
       <p>{props.company}</p>
       <h4 className={styles.jobCardLocation}>{props.location}</h4>
     </article>

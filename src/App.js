@@ -1,30 +1,55 @@
-import styles from './App.module.css';
 import BackgroundSVG from './components/BackgroundSVG';
 import Logo from './components/Header/Logo';
 import Toggle from './components/Header/Toggle';
-import CompanyHeader from './components/Main/CompanyHeader';
-import JobBottomBanner from './components/Main/JobBottomBanner';
-import JobDescription from './components/Main/JobDescription';
-import JobsList from './components/Main/JobsList';
-import SearchBar from './components/Main/SearchBar';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import JobPage from './pages/JobPage';
+
+import styles from './App.module.css';
 
 const App = () => {
   return (
     <div className={styles.app} data-theme='light'>
-      <BackgroundSVG />
-      <header className={styles.header}>
-        <Logo />
-        <Toggle />
-      </header>
-      <main className={styles.main}>
-        <SearchBar />
-        <JobsList />
-        {/* <CompanyHeader />
-        <JobDescription /> */}
-      </main>
-      {/* <footer className={styles.footer}>
-        <JobBottomBanner />
-      </footer> */}
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <>
+                <BackgroundSVG />
+                <header>
+                  <Logo />
+                  <Toggle />
+                </header>
+                <HomePage />
+              </>
+            }
+          />
+          <Route
+            path=':jobId'
+            element={
+              <>
+                <BackgroundSVG />
+                <header>
+                  <Logo />
+                  <Toggle />
+                </header>
+                <JobPage />
+              </>
+            }
+          />
+
+          <Route
+            path='*'
+            element={
+              <main style={{ paddingTop: '4rem' }}>
+                <h3>Sorry! Page not found</h3>
+              </main>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };

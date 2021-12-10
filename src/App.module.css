@@ -11,26 +11,3 @@
 .app[data-theme='dark'] {
   --background-color: var(--color-midnight);
 }
-
-.header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 12.2rem;
-  padding: 0 10%;
-}
-
-.main {
-  position: relative;
-  padding: 0 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10rem;
-}
-
-.footer {
-  width: 100%;
-  background-color: var(--color-white);
-}
