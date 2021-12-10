@@ -3,6 +3,7 @@
   font-weight: 700;
   border-radius: var(--border-radius-xs);
   padding: 1.6rem 4rem;
+  text-transform: capitalize;
 }
 
 .buttonPrimary {

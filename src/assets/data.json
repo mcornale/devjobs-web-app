@@ -106,18 +106,18 @@
     "requirements": {
       "content": "As a hands-on subject matter expert, you will use expert-level engineering knowledge to provide technical support and help translate customer requirements into exciting new product features. You will be working within multi-disciplinary teams to create pervasive simulation solutions, advance your industry knowledge, and grow the business impact.​",
       "items": [
-        "Expert Node.js proficiency in a production environment", 
-        "Proficiency in developing REST APIs", 
-        "Expert proficiency with relational databases (MySQL) and optimizing SQL queries", 
-        "Extensive experience with microservices-based architecture in production", 
+        "Expert Node.js proficiency in a production environment",
+        "Proficiency in developing REST APIs",
+        "Expert proficiency with relational databases (MySQL) and optimizing SQL queries",
+        "Extensive experience with microservices-based architecture in production",
         "Experience with CircleCI, Jenkins or similar CI/CD applications"
       ]
     },
     "role": {
       "content": "You'll work alongside a skilled team of Senior Engineers across five countries participating in system design, architecture, maintenance, and refactoring decisions. You'll be working on new features and integrations and be active in code reviews and coordinating engineering efforts across teams and products.",
       "items": [
-        "Administering and configuring software", 
-        "Identify opportunity and help to implement a monitoring solution for proactive and predictable operations.", 
+        "Administering and configuring software",
+        "Identify opportunity and help to implement a monitoring solution for proactive and predictable operations.",
         "Triaging problems with applications - identifying known errors and problem trends and finding permanent solutions through root cause analysis.",
         "Providing level 2 and 3 application support."
       ]
@@ -138,8 +138,8 @@
     "requirements": {
       "content": "We are looking for talented and motivated engineers who can hit the ground running and take our products to the next level. The engineers who are building our platform across the stack are always willing to go the extra mile to deliver the highest quality software and client experiences. Ideally, you would have:",
       "items": [
-        "Bachelor's degree preferred, strong preference for Computer Science field of study", 
-        "Minimum of 5 years of relevant work experience", 
+        "Bachelor's degree preferred, strong preference for Computer Science field of study",
+        "Minimum of 5 years of relevant work experience",
         "Hands-on experience with configuring and maintaining resources on AWS",
         "Experience and solid understanding to deploy and maintain container orchestration platforms such as ECS or Kubernetes",
         "Knowledge of networking fundamentals",
@@ -150,11 +150,11 @@
     "role": {
       "content": "You will work closely with development teams to implement automation solutions using technologies like Amazon Web Services (AWS), Ansible, Jenkins, and Kubernetes to automatically build, test, integrate, and deploy complex, modern systems. You will leverage the full power of the cloud to configure highly resilient and scalable applications that support zero downtime. This position is open to a mid-level to senior professional depending on experience and background.",
       "items": [
-        "Configure and maintain resources on AWS", 
-        "Maintain infrastructure as code using Terraform, CloudFormation, and/or Ansible", 
-        "Responsible for production deployments using Jenkins, CodeDeploy, GitHub Actions", 
-        "Manage security groups and access controls", 
-        "Use ticket management system such as Jira and Confluence to manage work priorities", 
+        "Configure and maintain resources on AWS",
+        "Maintain infrastructure as code using Terraform, CloudFormation, and/or Ansible",
+        "Responsible for production deployments using Jenkins, CodeDeploy, GitHub Actions",
+        "Manage security groups and access controls",
+        "Use ticket management system such as Jira and Confluence to manage work priorities",
         "Ability to clearly articulate and communicate complex technical ideas to non-DevOps colleagues"
       ]
     }
@@ -270,18 +270,18 @@
     "requirements": {
       "content": "You will be responsible for executing high quality solutions for customers and contributing to the day-to-day technical excellence of a delivery team. You should have a deep understanding of Modern JavaScript, HTML and CSS, the software development life cycle, and possess the ability to implement and execute standard software architecture patterns.",
       "items": [
-        "4+ years of experience of Frontend Development", 
-        "Expertise with React required", 
+        "4+ years of experience of Frontend Development",
+        "Expertise with React required",
         "Expertise with Next.js, Apollo, Typescript, and GraphQL preferred"
       ]
     },
     "role": {
       "content": "Beyond working closely with our team to build an exciting app, you’ll be leading Frontend development of our React/Next.js product. You’ll be coming up with UI/UX for the app and making architectural decisions for the frontend.",
       "items": [
-        "Use your thorough understanding of core client-side technologies to architect complex user interactions for desktop and mobile browsers using React", 
-        "Create universal JS modules to be used on both the client and the server", 
-        "Lead, direct and mentor more junior team members (including code review)", 
-        "Cover your code with unit and integration tests written with Jest and Mocha", 
+        "Use your thorough understanding of core client-side technologies to architect complex user interactions for desktop and mobile browsers using React",
+        "Create universal JS modules to be used on both the client and the server",
+        "Lead, direct and mentor more junior team members (including code review)",
+        "Cover your code with unit and integration tests written with Jest and Mocha",
         "Take part in decision-making around major architectural choices of the front-end team"
       ]
     }
@@ -301,7 +301,7 @@
     "requirements": {
       "content": "To be successful in this role, you should have experience with design software and wireframe tools preferably Figma. You should also have a portfolio of professional design projects that includes work with web/mobile applications.",
       "items": [
-        "At least 3 years of experience in a related field.", 
+        "At least 3 years of experience in a related field.",
         "Portfolio of design projects.",
         "Degree in Design, UX or relevant field.",
         "Experience with design process and systematic approach to organization, workflow"
@@ -310,10 +310,10 @@
     "role": {
       "content": "You’ll create both functional and appealing features that address our clients’ needs and help us grow our customer base. We expect you to have experience with market/user research and stay current with most recent trends, tools, workflows.",
       "items": [
-        "Gather and evaluate user requirements in collaboration with UX/UI manager or stakeholders.", 
-        "Illustrate design ideas using storyboards, process flows and sitemaps.", 
-        "Develop UI mockups and prototypes that clearly illustrate how sites function and look like.", 
-        "Create original graphic designs (eg. images, sketches and tables).", 
+        "Gather and evaluate user requirements in collaboration with UX/UI manager or stakeholders.",
+        "Illustrate design ideas using storyboards, process flows and sitemaps.",
+        "Develop UI mockups and prototypes that clearly illustrate how sites function and look like.",
+        "Create original graphic designs (eg. images, sketches and tables).",
         "Identify and troubleshoot UX problems",
         "Conduct layout adjustments based on user feedback."
       ]

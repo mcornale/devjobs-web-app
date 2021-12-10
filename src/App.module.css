@@ -1,5 +1,5 @@
 .app {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-color);
 }
 
@@ -22,5 +22,8 @@
 
 .main {
   position: relative;
-  padding: 0 10%;
+  padding: 0 10% 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
