@@ -1,0 +1,21 @@
+.app {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.app[data-theme='light'] {
+  --background-color: var(--color-light-grey);
+}
+
+.app[data-theme='dark'] {
+  --background-color: var(--color-midnight);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.2rem;
+  padding: 0 10%;
+}

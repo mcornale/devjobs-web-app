@@ -23,6 +23,7 @@
   --border-radius-s: 0.6rem;
   --border-radius-m: 1.2rem;
   --border-radius-l: 1.5rem;
+  --border-radius-xl: 10rem;
 }
 
 *,
@@ -40,4 +41,11 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
 }
