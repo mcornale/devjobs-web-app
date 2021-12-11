@@ -107,6 +107,10 @@ input {
   background-color: transparent;
 }
 
+input {
+  text-overflow: ellipsis;
+}
+
 button {
   cursor: pointer;
 }
