@@ -22,7 +22,7 @@
   border-radius: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0.5rem;
   transition: 0.2s linear;
 }
 
@@ -31,9 +31,9 @@
 }
 
 .toggleButton[data-active-theme='light']::before {
-  left: 0.5rem;
+  transform: translateY(-50%) translateX(0);
 }
 
 .toggleButton[data-active-theme='dark']::before {
-  right: 0.5rem;
+  transform: translateY(-50%) translateX(165%);
 }

@@ -28,7 +28,7 @@
 .inputField {
   flex-grow: 1;
   font-size: var(--font-size-body);
-  color: var(--color-very-dark-blue);
+  color: var(--color-text);
 }
 
 .inputField::placeholder {

@@ -5,7 +5,7 @@
   gap: 1.5rem;
   padding: 2.8rem 3.2rem;
   font-size: var(--font-size-body);
-  color: var(--color-very-dark-blue);
+  color: var(--color-text);
   font-weight: 600;
   cursor: pointer;
 }
@@ -21,13 +21,14 @@
   flex-shrink: 0;
   width: 2.4rem;
   height: 2.4rem;
-  background-color: #e7e8e9;
+  background-color: var(--color-checkbox);
   border-radius: var(--border-radius-xxs);
   position: relative;
   transition: 0.2s linear;
 }
 
-.checkboxCustomInput:hover {
+.checkboxCustomInput:hover,
+.checkboxLabel:hover .checkboxCustomInput {
   background-color: #d5d8f7;
 }
 

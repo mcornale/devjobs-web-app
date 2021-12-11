@@ -67,13 +67,15 @@ main {
 
 footer {
   width: 100%;
-  background-color: var(--color-white);
+  background-color: var(--background-color-elements);
+  transition: 0.2s linear;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--color-very-dark-blue);
+  color: var(--color-text);
+  transition: 0.2s linear;
 }
 
 h1 {
@@ -102,6 +104,7 @@ input {
   border: none;
   outline: none;
   font-family: inherit;
+  background-color: transparent;
 }
 
 button {

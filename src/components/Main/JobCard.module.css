@@ -10,8 +10,9 @@
   left: 0;
   width: 100%;
   height: calc(100% - 3.5rem);
-  background-color: var(--color-white);
+  background-color: var(--background-color-elements);
   border-radius: var(--border-radius-s);
+  transition: 0.2s linear;
 }
 
 .jobCard > * {
@@ -20,7 +21,6 @@
 
 .jobCardPosition {
   padding: 1.2rem 0;
-  transition: 0.2s linear;
 }
 
 .jobCardPosition:hover {

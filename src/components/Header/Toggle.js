@@ -3,7 +3,7 @@ import moonIconSrc from '../../assets/desktop/icon-moon.svg';
 
 import styles from './Toggle.module.css';
 
-const Toggle = () => {
+const Toggle = (props) => {
   return (
     <div className={styles.toggle}>
       <img
@@ -13,7 +13,8 @@ const Toggle = () => {
       />
       <button
         className={styles.toggleButton}
-        data-active-theme='light'
+        data-active-theme={props.activeTheme}
+        onClick={props.onChangeTheme}
       ></button>
       <img
         className={styles.toggleIconRight}

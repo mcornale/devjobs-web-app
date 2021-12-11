@@ -18,10 +18,10 @@
 }
 
 .buttonSecondary {
-  color: var(--color-violet);
-  background-color: #eeeffc;
+  color: var(--color-btn-2);
+  background-color: var(--background-color-btn-2);
 }
 
 .buttonSecondary:hover {
-  background-color: #c5c9f4;
+  background-color: var(--background-color-btn-2-hover);
 }

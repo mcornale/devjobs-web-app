@@ -8,48 +8,29 @@ import JobPage from './pages/JobPage';
 
 import styles from './App.module.css';
 import ScrollToTop from './components/ScrollToTop';
+import { useState } from 'react';
 
 const App = () => {
+  const [theme, setTheme] = useState('light');
+
+  const changeThemeHandler = () => {
+    setTheme((prevActiveTheme) =>
+      prevActiveTheme === 'light' ? 'dark' : 'light'
+    );
+  };
+
   return (
-    <div className={styles.app} data-theme='light'>
+    <div className={styles.app} data-theme={theme}>
+      <BackgroundSVG />
+      <header>
+        <Logo />
+        <Toggle activeTheme={theme} onChangeTheme={changeThemeHandler} />
+      </header>
       <BrowserRouter>
         <ScrollToTop>
           <Routes>
-            <Route
-              path='/'
-              element={
-                <>
-                  <BackgroundSVG />
-                  <header>
-                    <Logo />
-                    <Toggle />
-                  </header>
-                  <HomePage />
-                </>
-              }
-            />
-            <Route
-              path=':jobId'
-              element={
-                <>
-                  <BackgroundSVG />
-                  <header>
-                    <Logo />
-                    <Toggle />
-                  </header>
-                  <JobPage />
-                </>
-              }
-            />
-
-            <Route
-              path='*'
-              element={
-                <main style={{ paddingTop: '4rem' }}>
-                  <h3>Sorry! Page not found</h3>
-                </main>
-              }
-            />
+            <Route path='/' element={<HomePage />} />
+            <Route path=':jobId' element={<JobPage />} />
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

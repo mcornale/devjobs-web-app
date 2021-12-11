@@ -1,13 +1,26 @@
 .app {
   min-height: 100vh;
-  background-color: var(--background-color);
+  background-color: var(--background-color-app);
   overflow: auto;
+  transition: 0.2s linear;
 }
 
 .app[data-theme='light'] {
-  --background-color: var(--color-light-grey);
+  --background-color-app: var(--color-light-grey);
+  --background-color-elements: var(--color-white);
+  --color-text: var(--color-very-dark-blue);
+  --color-checkbox: #e7e8e9;
+  --background-color-btn-2: #eeeffc;
+  --background-color-btn-2-hover: #c5c9f4;
+  --color-btn-2: var(--color-violet);
 }
 
 .app[data-theme='dark'] {
-  --background-color: var(--color-midnight);
+  --background-color-app: var(--color-midnight);
+  --background-color-elements: var(--color-very-dark-blue);
+  --color-text: var(--color-white);
+  --color-checkbox: #313743;
+  --background-color-btn-2: #303642;
+  --background-color-btn-2-hover: #696e76;
+  --color-btn-2: var(--color-white);
 }
