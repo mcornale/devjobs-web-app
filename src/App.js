@@ -2,13 +2,14 @@ import BackgroundSVG from './components/BackgroundSVG';
 import Logo from './components/Header/Logo';
 import Toggle from './components/Header/Toggle';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import JobPage from './pages/JobPage';
 
 import styles from './App.module.css';
 import ScrollToTop from './components/ScrollToTop';
 import { useState } from 'react';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -31,6 +32,8 @@ const App = () => {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path=':jobId' element={<JobPage />} />
+            <Route path='/not-found' element={<NotFoundPage />} />
+            <Route path='*' element={<Navigate replace to='/not-found' />} />
           </Routes>
         </ScrollToTop>
       </BrowserRouter>
