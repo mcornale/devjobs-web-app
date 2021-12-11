@@ -26,6 +26,7 @@ const JobPage = () => {
         <JobBottomBanner
           company={currentJobPage.company}
           position={currentJobPage.position}
+          apply={currentJobPage.apply}
         />
       </footer>
     </>

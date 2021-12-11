@@ -9,7 +9,9 @@ const JobBottomBanner = (props) => {
         <h3 className={styles.jobDescriptionPosition}>{props.position}</h3>
         <p>{props.company}</p>
       </div>
-      <Button primary>Apply now</Button>
+      <a href={props.apply} target='_blank' rel='noreferrer'>
+        <Button primary>Apply now</Button>
+      </a>
     </section>
   );
 };

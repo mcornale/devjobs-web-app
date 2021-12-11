@@ -12,8 +12,9 @@ const JobDescription = (props) => {
           <h1 className={styles.jobDescriptionPosition}>{props.position}</h1>
           <h4>{props.location}</h4>
         </div>
-
-        <Button primary>Apply now</Button>
+        <a href={props.apply} target='_blank' rel='noreferrer'>
+          <Button primary>Apply now</Button>
+        </a>
       </div>
       <div>
         <p>{props.description}</p>

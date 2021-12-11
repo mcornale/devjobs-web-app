@@ -16,7 +16,9 @@ const CompanyHeader = (props) => {
           <h2>{props.company}</h2>
           <p>{props.website}</p>
         </div>
-        <Button secondary>Company Site</Button>
+        <a href={props.website} target='_blank' rel='noreferrer'>
+          <Button secondary>Company Site</Button>
+        </a>
       </div>
     </section>
   );
