@@ -2,8 +2,9 @@ import searchIconSrc from '../../assets/desktop/icon-search.svg';
 import locationIconSrc from '../../assets/desktop/icon-location.svg';
 
 import styles from './Input.module.css';
+import { forwardRef } from 'react';
 
-const Input = (props) => {
+const Input = forwardRef((props, ref) => {
   return (
     <label className={styles.inputLabel} htmlFor={props.id}>
       <img
@@ -15,9 +16,10 @@ const Input = (props) => {
         id={props.id}
         type='text'
         placeholder={props.placeholder}
+        ref={ref}
       />
     </label>
   );
-};
+});
 
 export default Input;

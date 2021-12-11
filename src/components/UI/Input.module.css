@@ -29,6 +29,8 @@
   flex-grow: 1;
   font-size: var(--font-size-body);
   color: var(--color-text);
+  padding: 1rem;
+  border-radius: var(--border-radius-xs);
 }
 
 .inputField::placeholder {
