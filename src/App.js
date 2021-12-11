@@ -1,4 +1,4 @@
-import BackgroundSVG from './components/BackgroundSVG';
+import BackgroundSVG from './components/Header/BackgroundSVG';
 import Logo from './components/Header/Logo';
 import Toggle from './components/Header/Toggle';
 

@@ -3,8 +3,14 @@ import locationIconSrc from '../../assets/desktop/icon-location.svg';
 
 import styles from './Input.module.css';
 import { forwardRef } from 'react';
+import useResponsiveText from '../../hooks/useResponsiveText';
 
 const Input = forwardRef((props, ref) => {
+  const placeholder = useResponsiveText(
+    props.placeholder,
+    props.placeholderResponsive
+  );
+
   return (
     <label className={styles.inputLabel} htmlFor={props.id}>
       <img
@@ -15,7 +21,7 @@ const Input = forwardRef((props, ref) => {
         className={styles.inputField}
         id={props.id}
         type='text'
-        placeholder={props.placeholder}
+        placeholder={placeholder}
         ref={ref}
       />
     </label>

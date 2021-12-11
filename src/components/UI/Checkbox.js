@@ -1,7 +1,10 @@
 import { forwardRef } from 'react';
+import useResponsiveText from '../../hooks/useResponsiveText';
 import styles from './Checkbox.module.css';
 
 const Checkbox = forwardRef((props, ref) => {
+  const text = useResponsiveText(props.text, props.responsiveText);
+
   return (
     <label className={styles.checkboxLabel} htmlFor={props.id}>
       <input
@@ -11,7 +14,7 @@ const Checkbox = forwardRef((props, ref) => {
         ref={ref}
       />
       <span className={styles.checkboxCustomInput}></span>
-      {props.text}
+      {text}
     </label>
   );
 });

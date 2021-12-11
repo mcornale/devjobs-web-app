@@ -27,16 +27,19 @@ const SearchBar = () => {
       <Input
         id='filterByInfos'
         placeholder='Filter by title, companies, expertise...'
+        placeholderResponsive='Filter by title...'
         ref={filterByInfosInput}
       />
       <Input
         id='filterByLocation'
         placeholder='Filter by location...'
+        placeholderResponsive='Filter by location...'
         ref={filterByLocationInput}
       />
       <Checkbox
         id='filterByFullTime'
         text='Full time only'
+        responsiveText='Full time'
         ref={fullTimeOnlyInput}
       />
       <Button primary>Search</Button>
