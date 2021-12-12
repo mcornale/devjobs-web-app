@@ -5,8 +5,8 @@ import styles from './JobBottomBanner.module.css';
 const JobBottomBanner = (props) => {
   return (
     <section className={styles.jobBottomBanner}>
-      <div>
-        <h3 className={styles.jobDescriptionPosition}>{props.position}</h3>
+      <div className={styles.jobDescription}>
+        <h3>{props.position}</h3>
         <p>{props.company}</p>
       </div>
       <a href={props.apply} target='_blank' rel='noreferrer'>

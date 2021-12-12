@@ -18,6 +18,7 @@ const SearchBar = () => {
   const [filterByLocationValue, setFilterByLocationValue] =
     useState(filterByLocation);
   const [fullTimeOnlyChecked, setFullTimeOnlyChecked] = useState(fullTimeOnly);
+
   const filterByInfosInput = useRef();
   const filterByLocationInput = useRef();
   const fullTimeOnlyInput = useRef();

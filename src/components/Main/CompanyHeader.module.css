@@ -18,3 +18,19 @@
 .companyHeaderInfos h2 {
   margin-bottom: 0.8rem;
 }
+
+@media (max-width: 48.12em) {
+  .companyHeader {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .companyHeaderInfos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 6.5rem;
+  }
+}

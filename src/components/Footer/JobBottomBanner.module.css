@@ -6,3 +6,18 @@
   padding: 3rem 0;
   margin: 8rem auto 0;
 }
+
+@media (max-width: 48.12em) {
+  .jobBottomBanner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .jobBottomBanner button {
+    width: 100% !important;
+  }
+
+  .jobDescription {
+    display: none;
+  }
+}

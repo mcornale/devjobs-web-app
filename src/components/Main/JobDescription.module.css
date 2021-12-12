@@ -61,3 +61,19 @@
   border-radius: 100%;
   background-color: var(--color-dark-grey);
 }
+
+@media (max-width: 48.12em) {
+  .jobDescription {
+    padding: 3rem;
+  }
+
+  .jobDescription button {
+    width: 100% !important;
+  }
+
+  .jobDescriptionDetails {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6rem;
+  }
+}

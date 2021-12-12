@@ -1,6 +1,7 @@
 .companyLogo {
   display: grid;
   place-items: center;
+  flex-shrink: 0;
 }
 
 .companyLogoSmall {
@@ -16,4 +17,14 @@
 
 .companyLogoBig img {
   width: 58%;
+}
+
+@media (max-width: 48.12em) {
+  .companyLogoBig {
+    width: 8rem;
+    height: 8rem;
+    border-radius: var(--border-radius-l);
+    position: absolute;
+    transform: translateY(-50%);
+  }
 }
