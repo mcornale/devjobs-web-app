@@ -6,22 +6,25 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import JobPage from './pages/JobPage';
 
-import styles from './App.module.css';
 import ScrollToTop from './components/ScrollToTop';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
 
   const changeThemeHandler = () => {
-    setTheme((prevActiveTheme) =>
-      prevActiveTheme === 'light' ? 'dark' : 'light'
-    );
+    setTheme((prevActiveTheme) => {
+      return prevActiveTheme === 'light' ? 'dark' : 'light';
+    });
   };
 
+  useEffect(() => {
+    document.getElementById('root').dataset.theme = theme;
+  }, [theme]);
+
   return (
-    <div className={styles.app} data-theme={theme}>
+    <>
       <BackgroundSVG />
       <header>
         <Logo />
@@ -37,7 +40,7 @@ const App = () => {
           </Routes>
         </ScrollToTop>
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 

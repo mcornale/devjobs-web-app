@@ -23,11 +23,13 @@ const Input = forwardRef((props, ref) => {
         alt={`${props.id} icon`}
       />
       <input
+        onChange={props.onChange}
         className={styles.inputField}
         id={props.id}
         type='text'
         placeholder={placeholder}
         ref={ref}
+        value={props.value}
       />
     </label>
   );

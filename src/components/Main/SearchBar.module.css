@@ -1,3 +1,8 @@
+.searchBarContainer {
+  width: 100%;
+  position: relative;
+}
+
 .searchBar {
   width: 100%;
   display: flex;
@@ -9,12 +14,47 @@
   transition: 0.2s linear;
 }
 
-.searchBar > * {
-  flex-shrink: 0;
+.searchBarMoreInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 10%);
+  z-index: 3;
+  background-color: var(--background-color-elements);
+  border-radius: var(--border-radius-s);
+  transform: translate(-50%, -50%);
+}
+
+.searchBarMoreInfos label:first-child::after {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--color-dark-grey);
+  opacity: 0.2;
+}
+
+.searchBarMoreInfos label {
+  padding: var(--padding-search-bar-items);
+}
+
+.searchBarMoreInfos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding: 0 var(--padding-search-bar-items) var(--padding-search-bar-items);
 }
 
 @media (max-width: 75em) {
-  .searchBar > * {
+  .searchBar > *,
+  .searchBarMoreInfos > * {
     flex-shrink: 1;
   }
 }
@@ -22,5 +62,10 @@
 @media (max-width: 48.12em) {
   .searchBar {
     padding: var(--padding-search-bar-items);
+    gap: 0.6rem;
+  }
+
+  .searchBar > label:first-child::after {
+    display: none;
   }
 }

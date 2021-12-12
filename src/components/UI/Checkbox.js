@@ -13,10 +13,12 @@ const Checkbox = forwardRef((props, ref) => {
       htmlFor={props.id}
     >
       <input
+        onChange={props.onChange}
         id={props.id}
         className={styles.checkboxDefaultInput}
         type='checkbox'
         ref={ref}
+        checked={props.checked}
       />
       <span className={styles.checkboxCustomInput}></span>
       {text}

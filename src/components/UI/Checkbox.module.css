@@ -1,7 +1,6 @@
 .checkboxLabel {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
   padding: var(--padding-search-bar-items);

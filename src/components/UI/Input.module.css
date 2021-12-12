@@ -4,7 +4,7 @@
   align-items: center;
   gap: 1rem;
   padding: var(--padding-search-bar-items);
-  min-width: 22rem;
+  min-width: 20rem;
 }
 
 .inputLabel[for='filterByInfos'] {
@@ -27,12 +27,11 @@
 }
 
 .inputField {
+  flex-grow: 1;
   font-size: var(--font-size-body);
   color: var(--color-text);
   padding: 1rem;
   border-radius: var(--border-radius-xs);
-  min-width: none;
-  width: auto;
   overflow: hidden;
 }
 
@@ -44,13 +43,5 @@
   .inputLabel {
     padding: 0;
     min-width: 12rem;
-  }
-
-  .inputLabel img {
-    display: none;
-  }
-
-  .inputLabel::after {
-    display: none;
   }
 }
