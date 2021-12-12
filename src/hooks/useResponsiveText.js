@@ -19,6 +19,8 @@ const useResponsiveText = (text, responsiveText) => {
     };
   }, [setWindowWidth]);
 
+  if (!responsiveText) return text;
+
   return usableText;
 };
 

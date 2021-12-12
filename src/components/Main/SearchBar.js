@@ -70,7 +70,6 @@ const SearchBar = () => {
               onChange={changeInputLocationHandler}
               id='filterByLocation'
               placeholder='Filter by location...'
-              placeholderResponsive='Filter by location...'
               ref={filterByLocationInput}
               value={filterByLocationValue}
               hideOnMobile
@@ -97,7 +96,6 @@ const SearchBar = () => {
                 onChange={changeInputLocationHandler}
                 id='filterByLocation'
                 placeholder='Filter by location...'
-                placeholderResponsive='Filter by location...'
                 ref={filterByLocationInput}
                 value={filterByLocationValue}
               />
