@@ -60,7 +60,7 @@ const JobsList = () => {
         )}
       </section>
       {numOfJobsToShow < numOfFilteredJobs && (
-        <Button onClick={updateNumOfJobsToShow} primary>
+        <Button onClick={updateNumOfJobsToShow} primary marginTop>
           Load more
         </Button>
       )}

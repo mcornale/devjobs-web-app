@@ -1,13 +1,16 @@
 .checkboxLabel {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  padding: 2.8rem 3.2rem;
+  padding: var(--padding-search-bar-items);
   font-size: var(--font-size-body);
   color: var(--color-text);
   font-weight: 600;
   cursor: pointer;
+  flex-shrink: 0 !important;
+  text-transform: capitalize;
 }
 
 .checkboxDefaultInput {

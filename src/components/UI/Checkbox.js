@@ -6,7 +6,12 @@ const Checkbox = forwardRef((props, ref) => {
   const text = useResponsiveText(props.text, props.responsiveText);
 
   return (
-    <label className={styles.checkboxLabel} htmlFor={props.id}>
+    <label
+      className={`${styles.checkboxLabel} ${
+        props.hideOnMobile ? 'hideOnMobile' : ''
+      }`}
+      htmlFor={props.id}
+    >
       <input
         id={props.id}
         className={styles.checkboxDefaultInput}

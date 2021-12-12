@@ -9,3 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 48.12em) {
+  .backSVGContainer {
+    background-image: url('../../assets/mobile/bg-pattern-header.svg');
+  }
+}

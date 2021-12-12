@@ -25,6 +25,8 @@
   --border-radius-m: 1.2rem;
   --border-radius-l: 1.5rem;
   --border-radius-xl: 10rem;
+  --padding-layout: 0 10%;
+  --padding-search-bar-items: 2rem 3.2rem;
 }
 
 *,
@@ -53,22 +55,23 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 12.2rem;
-  padding: 0 10%;
+  padding: var(--padding-layout);
 }
 
 main {
   position: relative;
-  padding: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10rem;
+  padding: var(--padding-layout);
 }
 
 footer {
   width: 100%;
   background-color: var(--background-color-elements);
   transition: 0.2s linear;
+  padding: var(--padding-layout);
 }
 
 h1,
@@ -117,4 +120,30 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.showOnlyOnMobile {
+  display: none;
+}
+
+@media (max-width: 75em) {
+  :root {
+    --padding-layout: 0 5%;
+    --padding-search-bar-items: 2rem;
+  }
+}
+
+@media (max-width: 48.12em) {
+  :root {
+    --padding-search-bar-items: 1.5rem;
+    --border-radius-xl: 0;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .showOnlyOnMobile {
+    display: block;
+  }
 }

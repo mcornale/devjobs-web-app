@@ -1,6 +1,6 @@
 import CompanyHeader from '../components/Main/CompanyHeader';
-import JobBottomBanner from '../components/Main/JobBottomBanner';
 import JobDescription from '../components/Main/JobDescription';
+import JobBottomBanner from '../components/Footer/JobBottomBanner';
 
 import jobsData from '../assets/data.json';
 

@@ -12,7 +12,12 @@ const Input = forwardRef((props, ref) => {
   );
 
   return (
-    <label className={styles.inputLabel} htmlFor={props.id}>
+    <label
+      className={`${styles.inputLabel} ${
+        props.hideOnMobile ? 'hideOnMobile' : ''
+      }`}
+      htmlFor={props.id}
+    >
       <img
         src={props.id === 'filterByInfos' ? searchIconSrc : locationIconSrc}
         alt={`${props.id} icon`}

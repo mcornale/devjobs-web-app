@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding: 2.8rem 3.2rem;
+  gap: 1rem;
+  padding: var(--padding-search-bar-items);
+  min-width: 22rem;
 }
 
 .inputLabel[for='filterByInfos'] {
@@ -26,13 +27,30 @@
 }
 
 .inputField {
-  flex-grow: 1;
   font-size: var(--font-size-body);
   color: var(--color-text);
   padding: 1rem;
   border-radius: var(--border-radius-xs);
+  min-width: none;
+  width: auto;
+  overflow: hidden;
 }
 
 .inputField::placeholder {
   color: #8c8f96;
+}
+
+@media (max-width: 48.12em) {
+  .inputLabel {
+    padding: 0;
+    min-width: 12rem;
+  }
+
+  .inputLabel img {
+    display: none;
+  }
+
+  .inputLabel::after {
+    display: none;
+  }
 }

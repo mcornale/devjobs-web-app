@@ -1,6 +1,5 @@
 .searchBar {
   width: 100%;
-  min-height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,4 +7,20 @@
   border-radius: var(--border-radius-s);
   padding-right: 1.6rem;
   transition: 0.2s linear;
+}
+
+.searchBar > * {
+  flex-shrink: 0;
+}
+
+@media (max-width: 75em) {
+  .searchBar > * {
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 48.12em) {
+  .searchBar {
+    padding: var(--padding-search-bar-items);
+  }
 }

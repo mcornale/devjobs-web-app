@@ -2,9 +2,8 @@
   font-size: var(--font-size-body);
   font-weight: 700;
   border-radius: var(--border-radius-xs);
-  padding: 1.6rem 1rem;
+  padding: 1.6rem;
   text-transform: capitalize;
-  width: 14rem;
   transition: 0.2s linear;
 }
 
