@@ -68,4 +68,8 @@
   .searchBar > label:first-child::after {
     display: none;
   }
+
+  .searchBar > label:first-child img {
+    display: none;
+  }
 }
