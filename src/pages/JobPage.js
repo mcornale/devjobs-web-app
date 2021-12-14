@@ -1,6 +1,7 @@
 import CompanyHeader from '../components/Main/CompanyHeader';
 import JobDescription from '../components/Main/JobDescription';
 import JobBottomBanner from '../components/Footer/JobBottomBanner';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import jobsData from '../assets/data.json';
 
@@ -16,7 +17,19 @@ const JobPage = () => {
       {!currentJobPage && <Navigate replace to='/not-found' />}
       {currentJobPage && (
         <>
-          <main>
+          <motion.main
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: { delay: 0.4, duration: 0.4 },
+            }}
+            exit={{
+              opacity: 0,
+            }}
+            transition={{ ease: 'easeInOut' }}
+          >
             <CompanyHeader
               logo={currentJobPage.logo}
               logoBackground={currentJobPage.logoBackground}
@@ -24,14 +37,14 @@ const JobPage = () => {
               website={currentJobPage.website}
             />
             <JobDescription {...currentJobPage} />
-          </main>
-          <footer>
+          </motion.main>
+          <motion.footer>
             <JobBottomBanner
               company={currentJobPage.company}
               position={currentJobPage.position}
               apply={currentJobPage.apply}
             />
-          </footer>
+          </motion.footer>
         </>
       )}
     </>

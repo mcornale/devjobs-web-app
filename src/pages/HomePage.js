@@ -1,12 +1,25 @@
 import SearchBar from '../components/Main/SearchBar';
 import JobsList from '../components/Main/JobsList';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const HomePage = () => {
   return (
-    <main>
+    <motion.main
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 0.4, duration: 0.4 },
+      }}
+      exit={{
+        opacity: 0,
+      }}
+      transition={{ ease: 'easeInOut' }}
+    >
       <SearchBar />
       <JobsList />
-    </main>
+    </motion.main>
   );
 };
 

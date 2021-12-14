@@ -4,7 +4,7 @@ import Checkbox from '../UI/Checkbox';
 import Input from '../UI/Input';
 import styles from './SearchBar.module.css';
 import { JobsContext } from '../../store/JobsContextProvider';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion, AnimatePresence } from 'framer-motion/dist/framer-motion';
 
 import filterIconSrc from '../../assets/mobile/icon-filter.svg';
 import searchIconSrc from '../../assets/mobile/icon-search.svg';
@@ -89,45 +89,49 @@ const SearchBar = () => {
             </Button>
           </>
         )}
-        {isSettingsModalOpen && (
-          <>
-            <Backdrop />
-            <motion.div
-              className={styles.searchBarMoreInfos}
-              initial={{
-                opacity: 0,
-                y: '-10%',
-                x: '-50%',
-              }}
-              animate={{
-                opacity: 1,
-                y: '-50%',
-                x: '-50%',
-              }}
-            >
-              <Input
-                onChange={changeInputLocationHandler}
-                id='filterByLocation'
-                placeholder='Filter by location...'
-                ref={filterByLocationInput}
-                value={filterByLocationValue}
-              />
-              <Checkbox
-                onChange={changeCheckboxValueHandler}
-                id='filterByFullTime'
-                text='Full time only'
-                responsiveText='Full time'
-                ref={fullTimeOnlyInput}
-                checked={fullTimeOnlyChecked}
-              />
-              <div>
-                <Button primary autoWidth>
-                  Search
-                </Button>
-              </div>
-            </motion.div>
-          </>
-        )}
+        <AnimatePresence>
+          {isSettingsModalOpen && (
+            <>
+              <Backdrop exit={{ opacity: 0 }} />
+              <motion.div
+                className={styles.searchBarMoreInfos}
+                initial={{
+                  opacity: 0,
+                  y: '-10%',
+                  x: '-50%',
+                }}
+                animate={{
+                  opacity: 1,
+                  y: '-50%',
+                  x: '-50%',
+                  transition: { delay: 0.2 },
+                }}
+                exit={{ opacity: 0, transition: { delay: 0 } }}
+              >
+                <Input
+                  onChange={changeInputLocationHandler}
+                  id='filterByLocation'
+                  placeholder='Filter by location...'
+                  ref={filterByLocationInput}
+                  value={filterByLocationValue}
+                />
+                <Checkbox
+                  onChange={changeCheckboxValueHandler}
+                  id='filterByFullTime'
+                  text='Full time only'
+                  responsiveText='Full time'
+                  ref={fullTimeOnlyInput}
+                  checked={fullTimeOnlyChecked}
+                />
+                <div>
+                  <Button primary autoWidth>
+                    Search
+                  </Button>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
 
         <Button
           onClick={openSettingsModalHandler}
