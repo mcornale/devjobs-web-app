@@ -162,7 +162,7 @@ a {
 
 @media (max-width: 48.12em) {
   :root {
-    --padding-search-bar-items: 1.5rem;
+    --padding-search-bar-items: 2.2rem;
     --border-radius-xl: 0;
   }
 
