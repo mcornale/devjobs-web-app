@@ -6,11 +6,18 @@ import { motion } from 'framer-motion/dist/framer-motion';
 import jobsData from '../assets/data.json';
 
 import { Navigate, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const JobPage = () => {
   let { jobId } = useParams();
 
   const currentJobPage = jobsData.find((jobData) => jobData.id === +jobId);
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.scroll(0, 0);
+    }, 400);
+  }, []);
 
   return (
     <>

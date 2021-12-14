@@ -6,7 +6,6 @@ import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import JobPage from './pages/JobPage';
 
-import ScrollToTop from './components/ScrollToTop';
 import { useState, useEffect } from 'react';
 import NotFoundPage from './pages/NotFoundPage';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
@@ -33,16 +32,14 @@ const App = () => {
         <Toggle activeTheme={theme} onChangeTheme={changeThemeHandler} />
       </header>
 
-      <ScrollToTop>
-        <AnimatePresence>
-          <Routes location={location} key={location.key}>
-            <Route path='/' element={<HomePage />} />
-            <Route path=':jobId' element={<JobPage />} />
-            <Route path='/not-found' element={<NotFoundPage />} />
-            <Route path='*' element={<Navigate replace to='/not-found' />} />
-          </Routes>
-        </AnimatePresence>
-      </ScrollToTop>
+      <AnimatePresence>
+        <Routes location={location} key={location.key}>
+          <Route path='/' element={<HomePage />} />
+          <Route path=':jobId' element={<JobPage />} />
+          <Route path='/not-found' element={<NotFoundPage />} />
+          <Route path='*' element={<Navigate replace to='/not-found' />} />
+        </Routes>
+      </AnimatePresence>
     </>
   );
 };
