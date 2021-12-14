@@ -29,6 +29,13 @@
   transition: 0.2s linear;
 }
 
+@media (hover: hover) {
+  .checkboxCustomInput:hover,
+  .checkboxLabel:hover .checkboxCustomInput {
+    background-color: #d5d8f7;
+  }
+}
+
 .checkboxCustomInput:active,
 .checkboxLabel:active .checkboxCustomInput {
   transform: scale(0.8);
@@ -50,11 +57,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%) rotate(-45deg);
-}
-
-@media (hover: hover) {
-  .checkboxCustomInput:hover,
-  .checkboxLabel:hover .checkboxCustomInput {
-    background-color: #d5d8f7;
-  }
 }
