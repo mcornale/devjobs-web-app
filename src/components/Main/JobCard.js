@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
 import CompanyLogo from './CompanyLogo';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import styles from './JobCard.module.css';
 import JobInfos from './JobInfos';
 
 const Job = (props) => {
   return (
-    <article className={styles.jobCard}>
+    <motion.article
+      className={styles.jobCard}
+      variants={props.variants}
+      transition={{ type: 'tween', duration: 0.5 }}
+    >
       <CompanyLogo
         logo={props.logo}
         logoBackground={props.logoBackground}
@@ -18,7 +23,7 @@ const Job = (props) => {
       </Link>
       <p>{props.company}</p>
       <h4 className={styles.jobCardLocation}>{props.location}</h4>
-    </article>
+    </motion.article>
   );
 };
 

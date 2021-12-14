@@ -1,11 +1,32 @@
 import { useContext } from 'react';
 import jobsData from '../../assets/data.json';
 import Button from '../UI/Button';
-import Job from './JobCard';
+import JobCard from './JobCard';
 import { JobsContext } from '../../store/JobsContextProvider';
 import includesText from '../../helpers/includesText';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import styles from './JobsList.module.css';
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+const childrenVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.6,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+  },
+};
 
 const JobsList = () => {
   const {
@@ -53,12 +74,23 @@ const JobsList = () => {
 
   return (
     <>
-      <section className={styles.jobsGrid}>
+      <motion.section
+        variants={containerVariants}
+        initial='hidden'
+        animate='visible'
+        className={styles.jobsGrid}
+      >
         {filteredJobsData.map(
           (jobData, index) =>
-            index < numOfJobsToShow && <Job key={jobData.id} {...jobData} />
+            index < numOfJobsToShow && (
+              <JobCard
+                key={jobData.id}
+                {...jobData}
+                variants={childrenVariants}
+              />
+            )
         )}
-      </section>
+      </motion.section>
       {numOfJobsToShow < numOfFilteredJobs && (
         <Button onClick={updateNumOfJobsToShow} primary marginTop>
           Load more
