@@ -12,15 +12,16 @@
   background-color: var(--color-violet);
 }
 
-.buttonPrimary:hover {
-  background-color: var(--color-light-violet);
-}
-
 .buttonSecondary {
   color: var(--color-btn-2);
   background-color: var(--background-color-btn-2);
 }
 
-.buttonSecondary:hover {
-  background-color: var(--background-color-btn-2-hover);
+@media (hover: hover) {
+  .buttonPrimary:hover {
+    background-color: var(--color-light-violet);
+  }
+  .buttonSecondary:hover {
+    background-color: var(--background-color-btn-2-hover);
+  }
 }

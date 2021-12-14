@@ -31,14 +31,16 @@
   transition: 0.2s linear;
 }
 
-.toggleButton:hover::before {
-  background-color: var(--color-light-violet);
-}
-
 .toggleButton[data-active-theme='light']::before {
   transform: translateY(-50%) translateX(0);
 }
 
 .toggleButton[data-active-theme='dark']::before {
   transform: translateY(-50%) translateX(165%);
+}
+
+@media (hover: hover) {
+  .toggleButton:hover::before {
+    background-color: var(--color-light-violet);
+  }
 }
