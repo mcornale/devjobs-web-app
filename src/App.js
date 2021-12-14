@@ -32,7 +32,7 @@ const App = () => {
         <Toggle activeTheme={theme} onChangeTheme={changeThemeHandler} />
       </header>
 
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           <Route path='/' element={<HomePage />} />
           <Route path=':jobId' element={<JobPage />} />

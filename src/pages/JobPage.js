@@ -16,7 +16,7 @@ const JobPage = () => {
   useEffect(() => {
     setTimeout(() => {
       window.scroll(0, 0);
-    }, 400);
+    }, 100);
   }, []);
 
   return (
@@ -30,7 +30,6 @@ const JobPage = () => {
             }}
             animate={{
               opacity: 1,
-              transition: { delay: 0.4, duration: 0.4 },
             }}
             exit={{
               opacity: 0,
