@@ -4,6 +4,7 @@ import Checkbox from '../UI/Checkbox';
 import Input from '../UI/Input';
 import styles from './SearchBar.module.css';
 import { JobsContext } from '../../store/JobsContextProvider';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import filterIconSrc from '../../assets/mobile/icon-filter.svg';
 import searchIconSrc from '../../assets/mobile/icon-search.svg';
@@ -91,7 +92,19 @@ const SearchBar = () => {
         {isSettingsModalOpen && (
           <>
             <Backdrop />
-            <div className={styles.searchBarMoreInfos}>
+            <motion.div
+              className={styles.searchBarMoreInfos}
+              initial={{
+                opacity: 0,
+                y: '-10%',
+                x: '-50%',
+              }}
+              animate={{
+                opacity: 1,
+                y: '-50%',
+                x: '-50%',
+              }}
+            >
               <Input
                 onChange={changeInputLocationHandler}
                 id='filterByLocation'
@@ -112,7 +125,7 @@ const SearchBar = () => {
                   Search
                 </Button>
               </div>
-            </div>
+            </motion.div>
           </>
         )}
 
