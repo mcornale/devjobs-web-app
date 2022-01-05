@@ -28,3 +28,4 @@ Users should be able to:
 - CSS (CSS Modules)
 - React (useState, useEffect, Context, Custom Hooks, ForwardRef ecc...)
 - React Router v6
+- Framer Motion
